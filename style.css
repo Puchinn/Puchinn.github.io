@@ -1,0 +1,96 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+::-webkit-scrollbar {
+    display: none;
+}
+body{
+    background-image: linear-gradient(rgba(21, 21, 21, 0.849),rgba(21, 21, 21, 0.849)) ,url(https://www.workato.com/product-hub/wp-content/uploads/2020/12/workato-blog-JavaScript-20201208-bl-01.jpg);
+    background-attachment: fixed;
+}
+.banner{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   backdrop-filter: blur(7px);
+    user-select: none;
+}
+.span1,.span2{
+    font-size: 130px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 900;
+    font-style:oblique;
+}
+.span1{
+    color: #fff;
+    transform: translateY(-70px);
+}
+.span2{
+    color: rgb(195, 249, 0);
+    transform: translateY(-20px);
+}
+.detras1,.detras2{
+    position: absolute;
+    font-size: 130px;
+    font-weight: 900;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style:oblique;
+    top: auto;
+    left: auto;
+}
+.detras1{
+    color: rgba(255, 255, 255, 0.262);
+    transform: translateX(-43%);
+    margin-top: -100px;
+}
+.detras2{
+    color: rgba(254, 252, 151, 0.177);
+    transform: translateX(58%);
+    margin-top: -8px;
+}
+.animado{
+    position: absolute;
+    font-style: italic;
+    font-weight: 100;
+    font-size: 40px;
+    color: #fff;
+    top: 60vh;
+    display: flex;
+    overflow: hidden;
+}
+ul{
+    list-style: none;
+    margin: 0 0 0 15px;
+    height: 50px;
+    animation: cambiar 9s infinite;
+    position: relative;
+    color:rgb(195, 249, 0);
+}
+.flecha{
+    position: absolute;
+    color: #fff;
+    font-size: 60px;
+    top: 80vh;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    animation: SubrBajr 2s infinite;
+}
+@keyframes cambiar {
+    0% {margin-top: 0;}
+    20%{margin-top: 0;}
+    25%{margin-top: -45px;}
+    45%{margin-top: -45px;}
+    50%{margin-top: -90px;}
+    65%{margin-top: -90px;}
+    75%{margin-top: -140px;}
+    85%{margin-top: -140px;}
+    100%{margin-top: 0;}
+}
+@keyframes SubrBajr {
+    0%{margin-top: 0;}
+    40%{margin-top: -30px;}
+    60%{margin-top: -30px;}
+    100%{margin-top: 0;}
+}
